@@ -55,6 +55,7 @@ function init() {
     for (let i = 0; i < allCards.length; i++) {
         $deck.append($('<li class="card"><i class="fa fa-' + allCards[i] + '"></i></li>'))
     }
+    allOpen = [];
     addCardListener();
 
     // Enables the timer to reset to 0 when the game is restarted
